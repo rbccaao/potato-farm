@@ -1,10 +1,45 @@
 ---
-# front matter here
+# custom styles
 ---
 
-$red: #ff5500;
-$blue: #0055ff;
+@import "variables";
 
 body {
-	color: $blue;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	background-color: $background;
+	padding: 5em;
+	min-height: 100vh;
+}
+
+section {
+	flex-basis: 100%;
+}
+
+.footer {
+	align-self: flex-end;
+	color: $footer-color;
+
+	a {
+		color: $footer-link;
+	}
+	small {
+		display: block;
+		padding: 0.5em;
+	}
+}
+
+h1 {
+	color: $brown;
+}
+
+p.lead {
+	color: $green;
+}
+
+.fab {
+	padding: 0 5px;
 }
